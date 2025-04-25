@@ -6,6 +6,7 @@ import ResultModal from '../components/ResultModal';
 import InfoSection from '../components/InfoSection';
 import Footer from '../components/Footer';
 import { useVoteSimulation } from '../hooks/useVoteSimulation';
+import { InfoIcon } from 'lucide-react';
 
 const Index = () => {
   const { candidates, simulateVote, isModalOpen, setIsModalOpen, result } = useVoteSimulation();
@@ -43,7 +44,9 @@ const Index = () => {
         <div className="mt-12 p-5 bg-gray-50 rounded-lg max-w-3xl mx-auto">
           <div className="flex flex-col sm:flex-row items-start gap-4">
             <div className="bg-blue-100 p-3 rounded-full sm:mt-1">
-              <span className="text-party-blue font-bold">?</span>
+              <span className="text-party-blue font-bold">
+                <InfoIcon size={24} className="text-party-blue" />
+              </span>
             </div>
             <div>
               <h4 className="font-semibold text-lg mb-2">¿Cómo funciona este simulador?</h4>
