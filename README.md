@@ -1,73 +1,106 @@
-# Welcome to your Lovable project
+# Mentira Electoral
 
-## Project info
+**Mentira Electoral** es un proyecto de concientización ciudadana diseñado para educar a los usuarios sobre la controvertida "Ley de Lemas" y su impacto en los procesos democráticos. El proyecto destaca las fallas de este sistema electoral y aboga por una alternativa más transparente y justa: la "Boleta Única".
 
-**URL**: https://lovable.dev/projects/5e974ca2-572a-4950-85e2-2fb40284b1e3
+## Descripción del Proyecto
 
-## How can I edit this code?
+Este proyecto es una aplicación web basada en React que utiliza herramientas y bibliotecas modernas para ofrecer una experiencia de usuario atractiva e informativa. A través de elementos visuales y textuales, explica cómo la "Ley de Lemas" distorsiona el proceso democrático y por qué la "Boleta Única" es una mejor alternativa.
 
-There are several ways of editing your application.
+### Características Principales
 
-**Use Lovable**
+- **Contenido Educativo**: Explica la "Ley de Lemas" y sus consecuencias de manera clara y concisa.
+- **Llamado a la Acción**: Motiva a los usuarios a compartir la información y generar conciencia sobre el tema.
+- **Diseño Responsivo**: Optimizado para dispositivos de escritorio y móviles.
+- **Interfaz Moderna**: Construida con TailwindCSS y componentes de Radix UI para una experiencia accesible y limpia.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5e974ca2-572a-4950-85e2-2fb40284b1e3) and start prompting.
+## Estructura del Proyecto
 
-Changes made via Lovable will be committed automatically to this repo.
+El proyecto está organizado de la siguiente manera:
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+├── public/
+│   ├── favicon.ico
+│   ├── image-2.png
+│   ├── placeholder.svg
+│   ├── robots.txt
+├── src/
+│   ├── components/
+│   │   ├── ui/          # Componentes reutilizables de UI (botones, modales, tooltips)
+│   │   ├── Footer.tsx   # Componente del pie de página con opciones para compartir
+│   │   ├── HeroSection.tsx # Sección principal de la página de inicio
+│   │   ├── InfoSection.tsx # Sección informativa que explica el problema
+│   ├── hooks/           # Hooks personalizados de React
+│   ├── lib/             # Funciones utilitarias
+│   ├── pages/
+│   │   ├── About.tsx    # Página "Acerca de" que explica la "Ley de Lemas"
+│   │   ├── Index.tsx    # Página de inicio
+│   ├── App.tsx          # Componente principal de la aplicación
+│   ├── main.tsx         # Punto de entrada de la aplicación React
+│   ├── index.css        # Estilos globales
+├── package.json         # Dependencias y scripts del proyecto
+├── tailwind.config.ts   # Configuración de TailwindCSS
+├── vite.config.ts       # Configuración de Vite
 ```
 
-**Edit a file directly in GitHub**
+## Tecnologías Utilizadas
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **React**: Biblioteca para construir interfaces de usuario.
+- **Vite**: Herramienta de construcción rápida para proyectos web modernos.
+- **TailwindCSS**: Framework CSS basado en utilidades para el diseño.
+- **Radix UI**: Componentes de UI accesibles y personalizables.
+- **React Router**: Para el enrutamiento del lado del cliente.
+- **React Query**: Para la gestión del estado y la obtención de datos.
+- **Lucide Icons**: Biblioteca de íconos para elementos visuales.
 
-**Use GitHub Codespaces**
+## Cómo Ejecutar el Proyecto
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Requisitos Previos
 
-## What technologies are used for this project?
+- Node.js (>= 16)
+- Gestor de paquetes (por ejemplo, `pnpm`, `npm` o `yarn`)
 
-This project is built with:
+### Pasos
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/allexwentworthok/mentira-electoral.git
+   cd mentira-electoral
+   ```
 
-## How can I deploy this project?
+2. Instalar las dependencias:
+   ```bash
+   pnpm install
+   ```
 
-Simply open [Lovable](https://lovable.dev/projects/5e974ca2-572a-4950-85e2-2fb40284b1e3) and click on Share -> Publish.
+3. Iniciar el servidor de desarrollo:
+   ```bash
+   pnpm dev
+   ```
 
-## Can I connect a custom domain to my Lovable project?
+4. Abrir la aplicación en el navegador en `http://localhost:3000`.
 
-Yes, you can!
+### Construir para Producción
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Para construir el proyecto para producción, ejecutar:
+```bash
+pnpm build
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+El resultado estará en el directorio `dist/`.
+
+## Contribuciones
+
+¡Las contribuciones son bienvenidas! Si tienes sugerencias o mejoras, no dudes en abrir un issue o enviar un pull request.
+
+## Licencia
+
+Este proyecto es de código abierto y está disponible bajo la [Licencia MIT](LICENSE).
+
+## Agradecimientos
+
+- **Alejandro Bogado**: Desarrollador y creador del proyecto.
+- **Colaboradores de la Comunidad**: Por su retroalimentación y apoyo.
+
+## Contacto
+
+Para preguntas o comentarios, contáctanos a través de [GitHub](https://github.com/allexwentworthok/mentira-electoral).

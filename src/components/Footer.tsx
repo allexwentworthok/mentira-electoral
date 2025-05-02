@@ -40,17 +40,29 @@ const Footer: React.FC = () => {
       {/* Bloque Negro */}
       <div className="mt-6 text-center text-xs text-white bg-black py-6">
         <p>
-          Desarrollado por <span className="font-mono text-green-400">Alejandro Bogado</span>{" "}
-          · GPG: <span className="font-mono text-green-400">0xABCD1234</span>
+          Desarrollado por{" "}
+          <span className="font-mono text-green-400">Alejandro Bogado</span> ·{" "}
+          <a
+            href="https://github.com/allexwentworthok.gpg"
+            target="_blank"
+            className="underline hover:text-green-400"
+          >
+            GPG pública
+          </a>{" "}
+          ·{" "}
+          <span className="font-mono text-green-400">
+            421A E4EB 75AA B5F0 92ED  CE70 FC70 7CDA F09B A4DE
+          </span>
         </p>
         <p className="flex justify-center items-center mt-2">
           <Lock size={14} className="mr-1 text-green-400" />
-          La privacidad y la transparencia son derechos. Este sitio no utiliza trackers.
+          La privacidad y la transparencia son derechos. Este sitio no utiliza
+          trackers.
         </p>
         <p className="mt-2">
-          Código abierto disponible en{" "}
+          Código fuente disponible en{" "}
           <a
-            href="https://github.com/tu-repo"
+            href="https://github.com/allexwentworthok/mentira-electoral"
             target="_blank"
             className="underline hover:text-green-400"
           >
