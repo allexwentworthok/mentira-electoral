@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import AboutPage from "./pages/acerca";
+import AboutPage from "./pages/acerca/Index";
 import { Analytics } from "@vercel/analytics/react"
 
 const queryClient = new QueryClient();
