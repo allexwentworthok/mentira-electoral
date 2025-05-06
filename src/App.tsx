@@ -7,6 +7,9 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import AboutPage from "./pages/acerca/Index";
 import { Analytics } from "@vercel/analytics/react"
+import GastosIndex from "./pages/gastos/Index";
+import IndexSearch from "./pages/search/Index";
+
 
 const queryClient = new QueryClient();
 
@@ -20,7 +23,9 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/acerca" element={<AboutPage />} />
+          <Route path="/vota" element={<AboutPage />} />
+          <Route path="/gastos" element={<GastosIndex />} />
+          <Route path="/search" element={<IndexSearch />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
