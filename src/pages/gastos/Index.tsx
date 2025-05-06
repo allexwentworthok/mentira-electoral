@@ -44,7 +44,7 @@ const GastosIndex = () => {
               </TextLoop>
             </p>
           ) : (
-            <div className="text-4xl sm:text-6xl mt-24 font-bold text-red-700 flex items-center justify-center gap-2">
+            <div className="text-4xl sm:text-6xl sm:mt-64 font-bold text-red-700 flex items-center justify-center gap-2">
               <span>{formatCurrency(totalCasta)}</span>
             </div>
           )}
