@@ -32,9 +32,9 @@ const GastosIndex = () => {
       </div>
 
       <main className="max-w-2xl w-full space-y-8">
-        <section className="container mx-auto py-8">
+        <section className="container mx-auto my-auto py-8 overflow-scroll">
           {fetchingLoading ? (
-            <p className="font-bold  text-center animate-pulse text-red-700 ">
+            <p className="font-bold text-center animate-pulse text-red-700 ">
               <TextLoop>
                 {LEMAS_2025.map((text) => (
                   <span key={text} className="block text-left">
@@ -44,7 +44,7 @@ const GastosIndex = () => {
               </TextLoop>
             </p>
           ) : (
-            <div className="text-6xl sm:text-8xl font-bold text-red-700 flex items-center justify-center gap-2">
+            <div className="text-4xl sm:text-6xl mt-24 font-bold text-red-700 flex items-center justify-center gap-2">
               <span>{formatCurrency(totalCasta)}</span>
             </div>
           )}
