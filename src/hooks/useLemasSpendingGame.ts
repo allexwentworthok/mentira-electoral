@@ -72,6 +72,12 @@ export const LEMAS_2025 = [
   "Paula Franco",
   "Lucas Romero Spinelli",
   "Sebastian Macias",
+  "Alejandro Chini",
+  "Maria Belen Perez",
+  "Pepe Pianesi",
+  "Malena Mazal",
+  "Santiago Koch",
+  "Carlos Arce",
 ];
 
 interface LemaSpending {
